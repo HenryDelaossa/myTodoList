@@ -1,0 +1,106 @@
+.section-login-register {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-login-register h2 {
+    margin-bottom: 4rem;
+}
+
+/* =====FORM======= */
+.section-login-register form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.groupInpt {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+}
+.groupInpt input {
+    padding: .7rem;
+    border-radius: 8px;
+    border: none;
+}
+.groupInpt input:focus {
+    outline: 1px solid green;
+}
+.groupInpt label {
+    align-self: flex-start;
+}
+
+.labelTerminos {
+    color: green;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+
+
+
+
+
+/* botones========================= */
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    margin: 20px;
+}
+
+.btn {
+    background-color: rgba(34, 173, 34, 0.826);
+    background-image: linear-gradient(315deg, rgb(29, 169, 29) 0%, rgba(255, 166, 0, 0.72) 74%);
+    border: none;
+    z-index: 1;
+}
+
+.btn:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-image: linear-gradient(315deg, orange 0%, green 74%);
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn:hover:after {
+    top: 0;
+    height: 100%;
+}
+
+.btn:active {
+    top: 2px;
+}

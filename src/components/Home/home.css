@@ -1,0 +1,170 @@
+.sectionHome {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleHome {
+    position: relative;
+    color: green;
+}
+
+.ctn-rotateWords span {
+    width: max-content;
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    background-color: orange;
+    padding-inline: 10px;
+    border-radius: 8px;
+    opacity: 0;
+    transform-origin: 10% 75%;
+    animation: rorateWord 12s linear infinite;
+}
+
+.ctn-rotateWords span:nth-child(1) {
+    animation-delay: 0;
+}
+
+.ctn-rotateWords span:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.ctn-rotateWords span:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.ctn-rotateWords span:nth-child(4) {
+    animation-delay: 9s;
+}
+
+.button {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.button-ir-mis-tareas {
+    background: linear-gradient(0deg, green 0%, rgb(229, 172, 65) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    position: relative;
+    border-radius: 8px;
+
+}
+
+.button-ir-mis-tareas span a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.button-ir-mis-tareas:before,
+.button-ir-mis-tareas:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: green;
+    transition: all 0.3s ease;
+}
+
+.button-ir-mis-tareas:before {
+    height: 0%;
+    width: 2px;
+}
+
+.button-ir-mis-tareas:after {
+    width: 0%;
+    height: 2px;
+}
+
+.button-ir-mis-tareas:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.button-ir-mis-tareas:hover:before {
+    height: 100%;
+}
+
+.button-ir-mis-tareas:hover:after {
+    width: 100%;
+}
+
+.button-ir-mis-tareas span a:hover {
+    color: orange;
+}
+
+.button-ir-mis-tareas span a:before,
+.button-ir-mis-tareas span a:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: orange;
+    transition: all 0.3s ease;
+}
+
+.button-ir-mis-tareas span a:before {
+    width: 2px;
+    height: 0%;
+}
+
+.button-ir-mis-tareas span a:after {
+    width: 0%;
+    height: 2px;
+}
+
+.button-ir-mis-tareas span a:hover:before {
+    height: 100%;
+}
+
+.button-ir-mis-tareas span a:hover:after {
+    width: 100%;
+}
+
+
+@keyframes rorateWord {
+    5% {
+        opacity: 1;
+    }
+
+    10%,
+    20% {
+        opacity: 1;
+        transform: rotate(3deg);
+    }
+
+    15% {
+        transform: rotate(-1deg);
+    }
+
+    25% {
+        opacity: 0;
+        transform: translateY(90px) rotate(10deg);
+    }
+}

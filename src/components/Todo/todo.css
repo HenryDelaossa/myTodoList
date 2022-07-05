@@ -1,0 +1,98 @@
+.section-todo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.section-todo-list h2 {
+    margin-bottom: 10rem;
+}
+.ctn-inputText-todo {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.ctn-inputText-todo input {
+    border-radius: 5px;
+    width: 80%;
+    padding: .5rem;
+}
+
+
+/*============BUTTONS======== */
+
+.btn-todo-list {
+    margin: 0 1rem;
+    padding: 0;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: .2s all;
+}
+.btn-todo-list:hover {
+    transform: scale(1.05);
+}
+.btn-add-todo:disabled {
+    color: gray;
+    transition: .3s all;
+    cursor: inherit;
+}
+.btn-confirm-update {
+    padding: 0;
+    font-size: 1.5rem;
+    color: rgb(75, 167, 75);
+}
+.btn-logOut {
+    color: gray;
+}
+.btn-logOut:hover {
+    transform: scale(1);
+}
+.btn-update {
+    color: orange;
+}
+.btn-state {
+    color: green;
+}
+.btn-delete {
+    color: red;
+}
+.ctn-inputText-todo button {
+    border: none;
+    font-size: 3rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    color: green;
+}
+
+
+.ctn-items-todo {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.inner-ctn-items {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0px auto;
+    margin-top: 0.5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid white;
+}
+
+.ctn-btn-signOut {
+    position: absolute;
+    top: 1rem;
+    left: unset;
+    right: 10%;
+}
+.ctn-btn-signOut .btn-signOut {
+    width: fit-content;
+    margin: 0;
+}
