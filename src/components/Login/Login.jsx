@@ -31,8 +31,8 @@ export const Logis = () => {
                             <label htmlFor="userEmail">email</label>
                         </div>
                         <div className="groupInpt">
-                            <input placeholder="password" type="password" name="userPassword" id="userPassword" value={checkForm.dates.userPassword || ''} onChange={handlChangInfClient} />
-                            <label htmlFor="userPassword">password</label>
+                            <input placeholder="password" type="password" name="userPassword" id="userPassword" autoComplete="false" value={checkForm.dates.userPassword || ''} onChange={handlChangInfClient} />
+                            <label htmlFor="userPassword" >password</label>
                         </div>
                         <div className="ctn-buttons">
                             <button onClick={handleLoginOldUser} className="custom-btn btn">Ingresar</button>
@@ -55,11 +55,11 @@ export const Logis = () => {
                             <label htmlFor="correoConfirm">confirma tu email</label>
                         </div>
                         <div className="groupInpt">
-                            <input placeholder="password" type="password" name="userPassword" id="contrasenna" value={checkForm.dates.userPassword || ''} onChange={handlChangInfClient} />
+                            <input placeholder="password" type="password" name="userPassword" id="contrasenna" autoComplete="false" value={checkForm.dates.userPassword || ''} onChange={handlChangInfClient} />
                             <label htmlFor="contrasenna">password</label>
                         </div>
                         <div className="groupInpt">
-                            <input placeholder="repetir password" type="password" name="userPasswordConfirm" id="contrasennaConfirm" value={checkForm.dates.userPasswordConfirm || ''} onChange={handlChangInfClient} />
+                            <input placeholder="repetir password" type="password" name="userPasswordConfirm" id="contrasennaConfirm" autoComplete="false" value={checkForm.dates.userPasswordConfirm || ''} onChange={handlChangInfClient} />
                             <label htmlFor="contrasennaConfirm">confirmar password</label>
                         </div>
                         <div className="gropuTerminos">
